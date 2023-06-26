@@ -13,23 +13,24 @@ h1 {
 }
 
 /* MISC */
-
 .main__container_large {
     width: 60%;
+}
+
+.main__container_small {
+
 }
 
 .purchase_button {
     background-color: #0061ff;
     color: white;
     border-style: none;
-    padding: 10px 20px;
+    padding: 10px 22px;
     font-size: 1em;
     cursor: pointer;
+    letter-spacing: 1px;
 }
 
-.main__container_small {
-
-}
 
 /* HEADER */
 
@@ -37,9 +38,18 @@ h1 {
    height: 90px;
 }
 
-.header__item {
-    line-height: 100px;
+.header__logo {
     vertical-align: middle;
+}
+
+.header__item {
+    line-height: 90px;
+    vertical-align: middle;
+}
+
+.header__item > .horizontal-list > li {
+    margin: 0px 0.95em;
+    color: #212121;
 }
 
 
