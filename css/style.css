@@ -2,7 +2,7 @@
 
 :root {
     font-family: 'Open Sans', sans-serif;
-
+    font-size: 13px;
     --header-height: 65px;
 }
 
@@ -28,15 +28,14 @@ h2 {
     width: 50%;
 }
 
-
 .purchase_button {
     background-color: #0061ff;
     color: white;
     border-style: none;
     padding: 10px 22px;
-    font-size: 1em;
+    font-size: 13px;
     cursor: pointer;
-    letter-spacing: 1px;
+    max-height: 40px;
 }
 
 
@@ -57,6 +56,7 @@ h2 {
 .header__item > .horizontal-list > li {
     margin: 0px 0.95em;
     color: #212121;
+
 }
 
 
@@ -72,7 +72,6 @@ h2 {
 .jumbotron__left_col {
     float: left;
     width: 30%;
-    font-size: 13px;
 }
 
 .jumbotron__container > img {
@@ -80,5 +79,65 @@ h2 {
     width: 70%;
     height: auto;
     margin-bottom: -60px;
+}
+
+
+/* BUSINESS PLANS */
+.plans {
+    gap: 35px;
+    margin-top: 2em;
+}
+
+.plans__card {
+    /* width: calc((100%/3) - 30px); */
+    flex-basis: calc(100%/3);
+    min-height: 100px;
+    margin-bottom: 50px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.card__content {
+    margin: 20px 25px;
+}
+
+.plans__card > h3 {
+    font-size: 13px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    width: 100%;
+}
+
+.card__content > h2 {
+    font-size: 1.4em;
+    margin: 1em 0;
+}
+
+.card__content > ul > li {
+    font-size: 11px;
+    margin: 1em 0;
+}
+
+.card__content .purchase_button {
+    font-size: 11px;
+}
+
+.card__content > hr {
+    width: 30%;
+    margin: 2em 0;
+}
+
+.card__highlights > li:before {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-size: 10px 10px;;
+    background-image: url(../img/highlights_checkmark.svg);
+    background-repeat: no-repeat;
+    margin-right: 5px;
 }
 
