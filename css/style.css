@@ -152,3 +152,17 @@ h2 {
     margin-right: 5px;
 }
 
+/* ENTERPRISE PLAN */
+.card_enterprise_col1 {
+    width: 70%;
+    margin-right: 25px;
+}
+
+.card_enterprise_col2 {
+    width: 30%;
+}
+
+.enterprise__button {
+    width: 100%;
+
+}
