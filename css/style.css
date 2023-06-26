@@ -12,13 +12,26 @@ h1 {
     margin-bottom: 40px;
 }
 
+h2 {
+    font-size: 3em;
+}
+
 /* MISC */
 .main__container_large {
     width: 60%;
 }
 
 .main__container_small {
+    width: 50%;
+}
 
+.merger {
+    background-color: white;
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    top: -80px;
+    z-index: 5;
 }
 
 .purchase_button {
@@ -71,5 +84,7 @@ h1 {
     float: right;
     width: 70%;
     height: auto;
+    z-index: 10;
+    position: relative;
 }
 
