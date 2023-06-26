@@ -3,10 +3,40 @@
 }
 
 .header__container {
-    
+   height: 90px;
+}
+
+.main__container_large {
+    width: 60%;
+}
+
+.main__container_small {
+
 }
 
 .header__item {
     line-height: 100px;
     vertical-align: middle;
 }
+
+
+/* JUMBOTRON */
+.jumbotron {
+    background-color: #b4d0e7;
+}
+
+.jumbotron__container {
+}
+
+.jumbotron__left_col {
+    float: left;
+    width: 20%;
+}
+
+.jumbotron__container > img {
+    float: right;
+    width: 80%;
+    height: auto;
+    
+}
+
