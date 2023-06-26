@@ -79,6 +79,10 @@
 }
 
 /* LISTS */
+.no-style {
+    list-style: none;
+}
+
 .horizontal-list {
     list-style: none;
 }
@@ -86,6 +90,7 @@
 .horizontal-list > li {
     display: inline-block;
 }
+
 
 
 /* PADDING & PADDING */
