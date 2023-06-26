@@ -1,0 +1,12 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__container {
+    
+}
+
+.header__item {
+    line-height: 100px;
+    vertical-align: middle;
+}
