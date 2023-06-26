@@ -111,9 +111,20 @@ h2 {
     width: 100%;
 }
 
-.card__content > h2 {
+.card__title {
     font-size: 1.4em;
     margin: 1em 0;
+}
+
+.card__price {
+    font-weight: 700;
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.card__frequency {
+    opacity: 0.5;
+    font-size: 11px;
 }
 
 .card__content > ul > li {
