@@ -1,19 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 :root {
     font-family: 'Open Sans', sans-serif;
+
+    --header-height: 65px;
 }
 
 
 /* GENERICS */
 h1 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 800;
     margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;
+    font-weight: 700;
 }
 
 /* MISC */
@@ -25,14 +28,6 @@ h2 {
     width: 50%;
 }
 
-.merger {
-    background-color: white;
-    width: 100%;
-    min-height: 200px;
-    position: relative;
-    top: -80px;
-    z-index: 5;
-}
 
 .purchase_button {
     background-color: #0061ff;
@@ -46,9 +41,8 @@ h2 {
 
 
 /* HEADER */
-
 .header__container {
-   height: 90px;
+   height: var(--header-height);
 }
 
 .header__logo {
@@ -56,7 +50,7 @@ h2 {
 }
 
 .header__item {
-    line-height: 90px;
+    line-height: var(--header-height);
     vertical-align: middle;
 }
 
@@ -78,13 +72,13 @@ h2 {
 .jumbotron__left_col {
     float: left;
     width: 30%;
+    font-size: 13px;
 }
 
 .jumbotron__container > img {
     float: right;
     width: 70%;
     height: auto;
-    z-index: 10;
-    position: relative;
+    margin-bottom: -60px;
 }
 
