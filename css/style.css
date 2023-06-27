@@ -241,6 +241,11 @@ h2 {
     aspect-ratio: 1/1;
 }
 
+.blocks_container div:nth-of-type(even) > div {
+    align-self: stretch;
+    background-color: rebeccapurple;
+}
+
 
 
 .block {
