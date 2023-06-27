@@ -190,3 +190,23 @@ h2 {
     gap: 20px;
 }
 
+
+/* FEATURES */
+.feature {
+    flex-basis: calc((100%/3) - 35px);
+    min-height: 30px;
+    /* background-color: grey;
+    border: 1px dashed black; */
+}
+
+.features__section .flex {
+    gap: 50px;
+}
+
+.features__section > .main__container_small > h2 {
+    font-size: 2.5em;
+}
+
+.feature h2 {
+    padding-bottom: 20px;
+}
