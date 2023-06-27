@@ -11,6 +11,11 @@ html {
     font-size: 13px;
 }
 
+a {
+    color:#0061ff;
+    text-decoration: dashed;
+}
+
 h1 {
     font-size: 4em;
     font-weight: 800;
@@ -18,7 +23,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 700;
 }
 
@@ -203,10 +208,47 @@ h2 {
     gap: 50px;
 }
 
-.features__section > .main__container_small > h2 {
+/* .features__section > .main__container_small > h2 {
     font-size: 2.5em;
-}
+} */
 
 .feature h2 {
     padding-bottom: 20px;
 }
+
+
+/* CUSTOMERS */
+.customers {
+    margin-top: 150px;
+}
+
+.blocks_container {
+    
+}
+.blocks_container div:nth-of-type(odd) {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+.blocks_container div:nth-of-type(odd) > div {
+    width: 50%;
+
+    text-align: center;
+    border: 1px dashed black;
+
+    flex-grow: 1;
+    aspect-ratio: 1/1;
+}
+
+
+
+.block {
+    flex-basis: calc(100%/3);
+    min-height: 100px;
+    background-color: pink;
+    border: 1px dashed black;
+}
+
+
+
