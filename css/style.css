@@ -28,19 +28,32 @@ h2 {
     width: 50%;
 }
 
-.purchase_button {
+/* .button {
+    padding: 10px 22px;
+
+    max-height: 40px;
+  
+
+} */
+
+.button {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 13px;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+.button--blue {
     background-color: #0061ff;
     color: white;
     border-style: none;
-    padding: 10px 22px;
-    font-size: 13px;
-    cursor: pointer;
-    max-height: 40px;
 }
-
 
 /* HEADER */
 .header__container {
+    /* to-do:. remove height. let children padding determine height */
    height: var(--header-height);
 }
 
@@ -113,7 +126,6 @@ h2 {
 
 .card__title {
     font-size: 1.4em;
-    margin: 1em 0;
 }
 
 .card__price {
@@ -163,6 +175,6 @@ h2 {
 }
 
 .enterprise__button {
-    width: 100%;
+    width: 80%;
 
 }
