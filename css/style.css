@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 :root {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
     --header-height: 65px;
 }
 
-
 /* GENERICS */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
 h1 {
     font-size: 4em;
     font-weight: 800;
@@ -29,7 +32,7 @@ h2 {
 }
 
 .button {
-    padding: 10px 22px;
+    padding: 10px 0;
     font-size: 13px;
     cursor: pointer;
     max-height: 40px;
@@ -164,5 +167,26 @@ h2 {
     background-image: url(../img/highlights_checkmark.svg);
     background-repeat: no-repeat;
     margin-right: 5px;
+}
+
+
+/* PARTNERS */
+.partners {
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+
+.partners img {
+    width: 500px;
+    height: auto;
+}
+
+.partners .main__container_small {
+    gap: 25px;
+}
+
+.partners .w-35 {
+    flex-direction: column;
+    gap: 20px;
 }
 

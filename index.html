@@ -69,10 +69,10 @@
         <!-- BUSINESS PLANS -->
         <section class="mt-3 pt-3">
             <div class="main__container_small center_div">
-                <h2>Trova il piano business che fa per te</h2>
+                <h2 class="mb-3 mt-3">Trova il piano business che fa per te</h2>
 
-                <input type="radio" name="business_plan" id="monthly">
-                <label for="monthly">Fatturazione mensile</label>
+                <input type="radio" name="business_plan" id="monthly" checked="checked">
+                <label for="monthly"  class="mr-2">Fatturazione mensile</label>
                 <input type="radio" name="business_plan" id="annual">
                 <label for="annual">Fatturazione annuale</label>
 
@@ -180,25 +180,42 @@
         </section>
 
         <!-- ENTERPRISE PLAN CARD -->
-        <section>
+        <section class="enterprise_plan">
             <div class="main__container_small center_div">
                 <div class="plans__card">
 
                     <h3><i class="fa-solid fa-building"></i> Team</h3>
 
                     <div class="card__content flex">
-                        <div class="card_enterprise_col1">
+                        <div class="col-70">
                             <h2 class="card__title">Enterprise</h2>
                             <p class="card__price">Contatta l'ufficio vendite per i prezzi</p>
                             <p class="card__frequency mt-2">Soluzioni personalizzate e supporto su misura per aiutare i
                                 professionisti IT nella gestione su qualsiasi scala.</p>
                         </div>
 
-                        <div class="card_enterprise_col2">
+                        <div class="col-30">
                             <button class="button button--blue">Contatta l'ufficio vendite</button>
                         </div>
                     </div>
                 </div>
+        </section>
+
+
+        <!-- DROPBOX PARTNERS -->
+        <section class="partners">
+            <div class="main__container_small center_div flex justify-between">
+                <div class="col-65">
+                    <img src="./img/partner.png" alt="">
+                </div>
+                <div class="w-35 flex">
+                    <h2 class="card__title mt-2">Entra in contatto con un partner Dropbox</h2>
+                    <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                    
+                    <div>
+                        <button class="button w-60">Trova un partner</button></div>
+                    </div>
+            </div>
         </section>
 
     </main>
