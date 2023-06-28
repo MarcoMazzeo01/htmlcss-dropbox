@@ -266,6 +266,7 @@ hr {
     color: #61082b;
     display: inline-block;
     width: 30%;
+    line-height: 1;
 }
 
 .customers__ad > .button {
