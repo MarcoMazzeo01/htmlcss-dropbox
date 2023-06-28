@@ -247,12 +247,30 @@ h2 {
 }
 
 
-
 .block {
     flex-basis: calc(100%/3);
     min-height: 100px;
     background-color: pink;
     border: 1px dashed black;
+}
+
+.customers__ad {
+    background-color: #b4d0e7;
+    min-height: 250px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.customers__ad > h2 {
+    color: #61082b;
+    display: inline-block;
+    width: 30%;
+}
+
+.customers__ad > .button {
+    border-style: none;
+    display: inline-block;
+    width: 15%;
 }
 
 
