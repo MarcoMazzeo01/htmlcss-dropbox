@@ -37,7 +37,7 @@ h2 {
 }
 
 .button {
-    padding: 10px 0;
+    padding: 10px;
     font-size: 13px;
     cursor: pointer;
     max-height: 40px;
@@ -247,6 +247,10 @@ hr {
     background-color: rebeccapurple;
 }
 
+.img_test {
+    margin: auto;
+}
+
 
 .block {
     flex-basis: calc(100%/3);
@@ -257,16 +261,15 @@ hr {
 
 .customers__ad {
     background-color: #b4d0e7;
-    min-height: 250px;
-    padding-top: auto;
-    padding-bottom: auto;
+    padding: 80px 0;
+    gap: 100px;
 }
 
 .customers__ad > h2 {
     color: #61082b;
     display: inline-block;
     width: 30%;
-    line-height: 1;
+    /* line-height: 1; */
 }
 
 .customers__ad > .button {
