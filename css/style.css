@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
-:root {
-    --header-height: 65px;
-}
-
 /* GENERICS */
 
 html {
@@ -12,7 +8,7 @@ html {
 }
 
 a {
-    color:#0061ff;
+    color: #0061ff;
     text-decoration: dashed;
 }
 
@@ -40,7 +36,6 @@ h2 {
     padding: 10px;
     font-size: 13px;
     cursor: pointer;
-    max-height: 40px;
     background-color: white;
     border: 1px solid black;
 }
@@ -63,20 +58,28 @@ h2 {
 
 /* HEADER */
 .header__container {
-   height: var(--header-height);
-   background-color: white;
+    position: fixed;
+    z-index: 100;
+    top: 0%;
+    width: 100%;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .header__logo {
-    vertical-align: middle;
+}
+
+.header__logo > img  {
+    display: block;
 }
 
 .header__item {
-    line-height: var(--header-height);
-    vertical-align: middle;
+    /* line-height: var(--header-height);
+    vertical-align: middle; */
 }
 
-.header__item > .horizontal-list > li {
+.header__item>.horizontal-list>li {
     margin: 0px 0.95em;
     color: #212121;
 
@@ -89,15 +92,13 @@ h2 {
     padding-top: 70px;
 }
 
-.jumbotron__container {
-}
 
 .jumbotron__left_col {
     float: left;
     width: 30%;
 }
 
-.jumbotron__container > img {
+.jumbotron__container>img {
     float: right;
     width: 70%;
     height: auto;
@@ -116,17 +117,17 @@ h2 {
     flex-basis: calc(100%/3);
     min-height: 100px;
     margin-bottom: 50px;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .card__content {
     margin: 20px 25px;
 }
 
-.plans__card > h3 {
+.plans__card>h3 {
     font-size: 13px;
     font-weight: 400;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -149,7 +150,7 @@ h2 {
     font-size: 11px;
 }
 
-.card__content > ul > li {
+.card__content>ul>li {
     font-size: 11px;
     margin: 1em 0;
 }
@@ -164,12 +165,13 @@ hr {
     margin: 2em 0;
 }
 
-.card__highlights > li:before {
+.card__highlights>li:before {
     content: "";
     display: inline-block;
     height: 10px;
     width: 10px;
-    background-size: 10px 10px;;
+    background-size: 10px 10px;
+    ;
     background-image: url(../img/highlights_checkmark.svg);
     background-repeat: no-repeat;
     margin-right: 5px;
@@ -230,16 +232,14 @@ hr {
     background-color: #f5f5f5;
 }
 
-.customers__quote {
-
-}
+.customers__quote {}
 
 .customers__logos {
     display: flex;
     flex-wrap: wrap;
 }
 
-.customers__logos > div {
+.customers__logos>div {
     flex-basis: 50%;
     display: flex;
     justify-content: center;
@@ -247,7 +247,7 @@ hr {
     aspect-ratio: 1;
 }
 
-.customers__logos > div > img {
+.customers__logos>div>img {
     width: 50%;
     height: auto;
     filter: invert(100%);
@@ -294,14 +294,14 @@ hr {
     gap: 100px;
 }
 
-.customers__ad > h2 {
+.customers__ad>h2 {
     color: #61082b;
     display: inline-block;
     width: 30%;
     /* line-height: 1; */
 }
 
-.customers__ad > .button {
+.customers__ad>.button {
     border-style: none;
     display: inline-block;
     width: 15%;
@@ -329,7 +329,7 @@ hr {
     display: inline-block;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-   
+
     width: var(--size);
     height: var(--size);
     background-size: var(--size);
@@ -346,11 +346,11 @@ hr {
     padding: 30px 0px;
 }
 
-.question > p {
+.question>p {
     font-weight: 600;
 }
 
-.question > button {
+.question>button {
     border-style: none;
     background-color: white;
 }
@@ -363,9 +363,9 @@ footer {
     padding-bottom: 40px;
 }
 
-footer  hr {
+footer hr {
     width: 10%;
-    border-color:  rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .footer__links {
@@ -393,4 +393,3 @@ footer  hr {
     color: rgba(255, 255, 255, 0.5);
     margin-top: 50px;
 }
-
