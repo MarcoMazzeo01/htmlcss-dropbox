@@ -274,4 +274,26 @@ h2 {
 }
 
 
+/* FAQS */
+
+.faqs__container {
+    flex-direction: column;
+}
+
+.question {
+    background-color: white;
+    border: 1px dashed black;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.question > p {
+    font-weight: 600;
+}
+
+.question > button {
+    border-style: none;
+    background-color: white;
+}
 
