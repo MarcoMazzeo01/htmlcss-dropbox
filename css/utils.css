@@ -94,6 +94,7 @@ img {
 /* LISTS */
 .no-style {
   list-style: none;
+  padding: 0;
 }
 
 .horizontal-list {
